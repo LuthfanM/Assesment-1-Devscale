@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import heroImage from "../../assets/school_kid.png";
 
 function FeatureItem({ text }: { text: string }) {
@@ -36,19 +34,19 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Link
+            <a
               href="#"
               className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:scale-[1.01] hover:bg-primary-light"
             >
               Mulai Pendaftaran <span className="ml-2">→</span>
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="#"
               className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-8 py-4 text-lg font-semibold text-secondary shadow-sm transition hover:border-border-light hover:text-primary"
             >
               Lihat Program <span className="ml-2">📖</span>
-            </Link>
+            </a>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-6">
@@ -63,11 +61,10 @@ export default function HeroSection() {
             <div className="absolute -right-6 -top-6 h-40 w-40 rounded-[40px] bg-decorative" />
 
             <div className="relative overflow-hidden rounded-[36px] border-[10px] border-white bg-white shadow-xl">
-              <Image
+              <img
                 src={heroImage}
                 alt="Ilustrasi siswa PAUD"
                 className="h-auto w-full object-cover"
-                priority
               />
             </div>
 

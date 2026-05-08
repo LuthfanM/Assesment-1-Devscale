@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const footerLinks = {
   Navigasi: ["Beranda", "Program", "Persyaratan", "Pendaftaran"],
   Informasi: ["Tentang Kami", "Visi & Misi", "FAQ", "Kontak"],
@@ -31,12 +29,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {items.map((item) => (
                 <li key={item}>
-                  <Link
+                  <a
                     href="#"
                     className="text-sm text-slate-500 transition hover:text-primary"
                   >
                     {item}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
